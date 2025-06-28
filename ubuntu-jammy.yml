@@ -1,4 +1,4 @@
-tasks:
-  - name: install openjdk-21-jdk-headless
-    apt:
-      name: openjdk-21-jdk-headless
+---
+- name: install openjdk-21-jdk-headless
+  apt:
+    name: openjdk-21-jdk-headless
