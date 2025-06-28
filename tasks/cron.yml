@@ -1,0 +1,6 @@
+- name: install cron job
+  cron:
+    user: ansible
+    name: "AMQ Tutorial Cron Job"
+    minute: "*/10"
+    job: "/usr/bin/ansible-pull -o -U https://github.com/rmortale/amq-tutorial.git"
